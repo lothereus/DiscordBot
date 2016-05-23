@@ -132,6 +132,6 @@ Ces plugins se trouvent dans le dossier `plugins` ordonnés tous de la manière 
 * le fichier package.json contient les modules à charger automatiquement pour le plugin
 * le fichier api.json contient toutes les sous-commandes utilisable avec le plugin
 
-(**_TODO: détailler un peu plus les plugins, leurs commandes et la syntaxe de description des sous commandes dans api.json)
+(**_TODO: détailler un peu plus les plugins, leurs commandes et la syntaxe de description des sous commandes dans api.json_**)
 
 Il existe actuellement 2 plugins: Twitter et Twitch
