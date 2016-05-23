@@ -90,9 +90,10 @@ Ensuite il est nécessaire d'_inviter_ le Bot sur votre serveur **Discord**.
 Utiliser le lien plus bas en remplaçant les champs comme précisé ci-dessous:
 * [id_application] : l'id de l'application que **Discord** qui a été créée précédemment
 * [permission] : la valeur des permissions à accorder au Bot (utiliser 66321471 par défaut)
+
 (facultatif: si vous souhaitez personnaliser vos permissions, rendez vous à l'adresse suivante https://discordapp.com/developers/docs/topics/permissions#bitwise-permission-flags)
 
-`https://discordapp.com/oauth2/authorize?client_id=[id_application]&scope=bot&permissions=[permission]`
+Lien d'invitation: `https://discordapp.com/oauth2/authorize?client_id=[id_application]&scope=bot&permissions=[permission]`
 
 Puis sélectionner le serveur sur lequel inviter le Bot.
 
