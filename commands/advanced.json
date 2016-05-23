@@ -5,11 +5,11 @@
     },
     "twitter": {
 		"usage": "<command> <username>",
-        "description": "récupère un tweet de <username> en fonction de <command>"
+        "description": "récupère un tweet ou des données de <username> en fonction de <command>"
     },
 	"twitch": {
 		"usage": "<command> <channelname>",
-		"description": "récupère des détails du stream/channel de <username> en fonction de <command>"
+		"description": "récupère des détails de diffusion/chaîne de <username> en fonction de <command>"
 	},
 	"planning": {
 		"usage": "",

@@ -1,24 +1,3 @@
-// Get Twitch API data
-/*try {
-	var url = "https://api.twitch.tv/kraken/channels/";
-} catch (e){
-	console.log("Please verify your username to twitch api");
-	process.exit();
-}*/
-
-// Parse json API Twitch
-/*if (input === "!planning") {
-	request({
-		url: url,
-		json: true
-	}, function (error, response, body) {
-		if (!error && response.statusCode === 200) {
-			mybot.sendFile(message, body.video_banner);
-		}
-	})
-}*/
-
-// Get all required npm modules
 var package_info = require("./package.json");
 for(var dependency in package_info.dependencies) {
 	var name = dependency.replace('.js','');
@@ -42,6 +21,7 @@ try {
 	process.exit();
 }
 
+// Default help function
 exports.help = function help(options) {
 	options.bot.sendMessage(
 		options.message.channel,
@@ -63,11 +43,17 @@ exports.get = function get(options) {
 	request(url, function(err, res, body) {
 		var result = JSON.parse(body);
 		if(options.command == "online") {
-			if(result.stream){
+			if(result.stream) {
 				//console.log(options.param+" is streaming!");
-				var message = command_api.message.replace("#USER#", options.param)
-													.replace("#GAME#", result.stream.game)
-													.replace("#V#", result.stream.viewers);
+				var message = command_api.message;
+				if(command_api.fields.length > 1) {
+					message += command_api.additional;
+				}
+				for(i in command_api.fields) {
+					message = message.replace("#"+command_api.fields[i]+"#", result.stream[command_api.fields[i]]);
+				}
+				message = message.replace("#USER#", options.param);
+				message = message.replace(/#NL#/g,"\n");
 				//console.log("Message will be sent: "+message);
 				options.bot.sendMessage(options.message.channel, message);
 			} else {
@@ -97,5 +83,3 @@ exports.get = function get(options) {
 		}
 	});
 };
-
-// replace(/#NL#/g,"\n")

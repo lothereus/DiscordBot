@@ -1,6 +1,8 @@
 {
   "discord":{
-    "token": "DISCORD_TOKEN"
+    "token": "DISCORD_TOKEN",
+	"email": "DISCORD_EMAIL",
+	"password": "DISCORD_PASSWORD"
   },
   "twitter":{
     "consumer_key": "TWITTER_API_KEY",

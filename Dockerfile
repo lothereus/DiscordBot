@@ -5,5 +5,5 @@ WORKDIR /app
 
 RUN npm install
 
-ENTRYPOINT ["sh", "config.sh"]
+ENTRYPOINT ["sh", "auth.sh"]
 CMD ["node", "bot.js"]

@@ -1,9 +1,35 @@
 {
   "name": "DiscordBot",
   "version": "1.0.0",
+  "description": "Bot for Discord app",
+  "readme": "README.md",
+  "author": {
+    "name": "Tasaka",
+    "email": ""
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TasakaSan/DiscordBot"
+  },
+  "maintainers": [
+    {
+      "name": "Lothereus",
+      "email": ""
+    },
+    {
+      "name": "MrChatouille",
+      "email": ""
+    }
+  ],
+  "main": "bot.js",
   "dependencies": {
-    "discord.js": ">=7",
-    "request": ">=2.72",
-    "twitter": ">=1.3.0"
+    "discord.js": ">=7.0.1",
+    "request": ">=2.72.0",
+    "twitter": ">=1.3.0",
+	"fs": ""
+  },
+  "engine": {
+    "node": "6.1.0"
   }
 }

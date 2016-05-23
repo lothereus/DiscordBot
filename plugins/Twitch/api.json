@@ -5,7 +5,8 @@
 			"game",
 			"viewers"
 		],
-		"message": "#USER# est actuellement en ligne et joue à #GAME#, #V# viewers devant le show !",
+		"message": "#USER# est actuellement en ligne",
+		"additional": " et joue à #game#, #viewers# viewers devant le show !",
 		"error": "#USER# est actuellement hors ligne"
 	},
 	"status": {
@@ -40,7 +41,7 @@
 			"views",
 			"followers"
 		],
-		"message": "Détails du channel #USER#: #NL#",
+		"message": "Détails de la chaîne #USER#: #NL#",
 		"additional": "- Status: #status##NL#- Jeu actuel: #game##NL#- Vues: #views##NL#- Followers: #followers#",
 		"error": "Impossible de trouver #USER#"
 	}

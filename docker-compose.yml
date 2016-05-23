@@ -4,4 +4,4 @@ services:
     build: .
     # volumes:
     #   - ./bot.js:/app/bot.js
-    env_file: config.env
+    env_file: auth.env

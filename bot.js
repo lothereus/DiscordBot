@@ -1,4 +1,4 @@
-console.log('Start');
+console.log('Bot init');
 // Get all required npm modules
 var package_info = require("./package.json");
 for(var dependency in package_info.dependencies) {
@@ -24,33 +24,37 @@ function fileExists(filePath) {
     }
 }
 
+// Get config data
+try {
+	var config = require("./config.json");
+	console.log("FILE : config.json [OK]");
+} catch (e) {
+	console.log("Please check your config.json file.\n"+e.stack);
+	process.exit();
+}
+
 // Get authentication data
 try {
 	var AuthDetails = require("./auth.json");
 	console.log("FILE : auth.json [OK]");
-} catch (e){
+} catch (e) {
 	console.log("Please create an auth.json with at least an email and password.\n"+e.stack);
 	process.exit();
 }
+
+console.log('Bot starts');
 
 //  Define & Connect Bot on Discord
 try {
 	var options = { autoReconnect: true };
 	var mybot = new discord.Client(options);
 	console.log("OBJ : discord.Client() [OK]");
-} catch (e){
+} catch (e) {
 	console.log("Error discord.Client");
 	process.exit();
 }
 
 // Preload plugins
-/*try {
-	var plugins = require("./plugins.js");
-	console.log("PLUGINS : loaded [OK]");
-} catch(e) {
-	console.log("Error plugins\n"+e.stack);
-	process.exit();
-}*/
 try {
 	var plugins = require("./plugins.js").init();
 	console.log("PLUGINS : loaded [OK]");
@@ -204,11 +208,18 @@ mybot.on("message", function(message) {
 	// bot function close
 });
 
-// login Discord TasakaBot
-mybot.loginWithToken(AuthDetails.discord.token).then(bot_success).catch(bot_error);
+// login Discord
+if(config.connection == "token") {
+	console.log("Bot try to connect via token");
+	mybot.loginWithToken(AuthDetails.discord.token).then(bot_success).catch(bot_error);
+} else if(config.connection == "account") {
+	console.log("Bot try to connect via account");
+	mybot.login(AuthDetails.discord.email, AuthDetails.discord.password).then(bot_success).catch(bot_error);
+}
 
 function bot_success(token){
     // handle success
+	console.log('CONNECTED');
 }
 
 function bot_error(error){
