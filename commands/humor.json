@@ -2,9 +2,9 @@
     "ping": {
         "message": "pong !"
     },
-	"lastwolf": {
-		"message": "Mais t'es où ? Pas là ! Mais t'es où ? Pas là ! Mais t'es ouuuuuuuu..."
-	},
+    "lastwolf": {
+        "message": "Mais t'es où ? Pas là ! Mais t'es où ? Pas là ! Mais t'es ouuuuuuuu..."
+    },
     "tasaka": {
         "message": "Pour donner tes sous à Tasaka, merci de faire vos donnations sur mon Compte Paypal ou dans mon portefeuille Bitcoin MP pour plus d'infos"
     },
@@ -49,8 +49,5 @@
     },
     "wolfbot": {
         "message": "Quoi moi ? non attends j'en ai trop fait aujourd'hui je retourne à ma sieste..."
-    },
-    "github": {
-        "message": "https://github.com/TasakaSan/DiscordBot"
     }
 }

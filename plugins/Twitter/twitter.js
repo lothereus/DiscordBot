@@ -58,7 +58,7 @@ exports.help = function help(options) {
 // Only one function to get all data
 exports.get = function get(options) {
     if(options.clear) {
-    options.bot.deleteMessage(options.message);
+        options.bot.deleteMessage(options.message);
     }
     var command_api = api[options.command];
     //console.log("COMMAND: "+JSON.stringify(command_api));
