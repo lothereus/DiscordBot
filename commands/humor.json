@@ -46,5 +46,11 @@
     },
     "cb": {
         "message": "Attend deux seconde je prends de quoi noter pour Tasaka"
+    },
+    "wolfbot": {
+        "message": "Quoi moi ? non attends j'en ai trop fait aujourd'hui je retourne à ma sieste..."
+    },
+    "github": {
+        "message": "https://github.com/TasakaSan/DiscordBot"
     }
 }

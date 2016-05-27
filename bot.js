@@ -136,15 +136,17 @@ mybot.on("message", function(message) {
 				var cmd_list = basics;
 			}
 			for(var cmd in cmd_list) {
-				info += "\n!" + cmd;
-				if (user_cmd.name == "advanced") {
-					var usage = cmd_list[cmd].usage;
-					if(usage){
-						info += " " + usage;
-					}
-					var description = cmd_list[cmd].description;
-					if(description){
-						info += "\n\t" + description;
+				if(!cmd_list[cmd].listed || cmd_list[cmd].listed !== false) {
+					info += "\n!" + cmd;
+					if (user_cmd.name == "advanced") {
+						var usage = cmd_list[cmd].usage;
+						if(usage){
+							info += " " + usage;
+						}
+						var description = cmd_list[cmd].description;
+						if(description){
+							info += "\n\t" + description;
+						}
 					}
 				}
 			}
@@ -176,11 +178,17 @@ mybot.on("message", function(message) {
 					plugins[user_cmd.name].help(options);
 				} else {
 					console.log("Command "+plugin_cmd+"('"+plugin_param+"') in plugin "+user_cmd.name);
+					if(command.listed && command.listed === false) {
+    				option["clear"]     = true;
+					}
 					options["command"]	= plugin_cmd;
 					options["param"]	= plugin_param;
 					plugins[user_cmd.name].get(options);
 				}
 			} else if (command.message) {
+				if(command.listed && command.listed === false) {
+         			mybot.deleteMessage(message);
+    		}
 				mybot.sendMessage(message.channel, command.message.replace(/#NL#/g,"\n"));
 			} else {
 				console.log("Empty command "+user_cmd.name+": "+JSON.stringify(command));

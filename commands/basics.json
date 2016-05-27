@@ -1,4 +1,4 @@
-﻿{
+{
     "command": {
         "description": "la liste des commandes disponibles",
         "message": "Commandes disponibles:"
@@ -17,15 +17,11 @@
     },
     "thedivision": {
         "description": "les docs utiles pour les joueurs de The Division",
-        "message": "Un des gdoc de référence sur le jeu: https://goo.gl/aLkMld#NL#Map de la DZ complète avec filtres: http://goo.gl/JhFEGU#NL#Le gdoc de pandé avec les builds dps et supports: https://goo.gl/zuFN36"
+        "message": "Voici le patch note 1.2 de TheDvision : http://tasa.ovh/aGv7C"
     },
     "farmroad": {
         "description": "la route de farm de Lastwolf en vidéo",
         "message": "Voici la route de farm: https://youtu.be/qkAqSGHir30"
-    },
-    "diablo3": {
-        "description": "liste des personnages de Lastwolf",
-        "message": "Voici la liste des personnages de Lastwolf: http://eu.battle.net/d3/fr/profile/Lastwolf-2869/hero/54563586"
     },
     "drahquebible": {
         "description": "doc de référence pour les débuts de saison Diablo",
@@ -39,7 +35,9 @@
         "description": "le lien pour faire une donnation à Lastwolf",
         "message": "Si toi aussi tu veux soutenir le stream de Lastwolf: https://www.twitchalerts.com/donate/lastwolfplay#NL#Les donnations ne sont pas obligatoires mais elles participent à l'amélioration du stream."
     },
-    "prout": {
-        "description": "Ne sert à rien !"
+    "server": {
+        "description": "liste tout les serveurs de jeu de la communauté de lastwolf",
+	    "message": "Minecraft : Tasaka.ovh:25565#NL#Rust : Tasaka Rust Server#NL#Terraria : En cours"
     }  
+  
 }
