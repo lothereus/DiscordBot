@@ -4,35 +4,25 @@
         "file": "hardware.jpg"
     },
     "twitter": {
-		"usage": "<command> <username>",
+        "usage": "<command> <username>",
         "description": "récupère un tweet ou des données de <username> en fonction de <command>"
     },
-	"twitch": {
-		"usage": "<command> <channelname>",
-		"description": "récupère des détails de diffusion/chaîne de <username> en fonction de <command>"
-	},
-	"diablo": {
-		"usage": "<command> <params>",
-		"description": "récupère des informations sur un joueur, un perso ou le classement"
-	},
-	"planning": {
-		"usage": "",
-		"alias": "twitch planning lastwolfplay",
-		"description": "récupère le planning de Lastwolf"
-	},
-	"stream": {
-		"usage": "",
-		"alias": "twitch online lastwolfplay",
-        "description": "info sur le stream twitch de Lastwolf"
+    "twitch": {
+        "usage": "<command> <channelname>",
+        "description": "récupère des détails de diffusion/chaîne de <username> en fonction de <command>"
     },
-	"lastwolftweet" {
-		"usage": "",
-		"alias": "twitter lasttweet lastwolfplays",
-		"description": "dernier tweet de Lastwolf"
-	},
-	"thedivtweet": {
-		"usage": "",
-		"alias": "twitter lasttweet thedivisiongame",
-		"description": "dernier tweet de TheDivisionGame"
-	}
+    "diablo": {
+        "usage": "<command> <params>",
+        "description": "récupère des informations sur un joueur, un perso ou le classement"
+    },
+    "planning": {
+        "usage": "",
+        "alias": "twitch planning lastwolfplay",
+        "description": "récupère le planning de Lastwolf"
+    },
+    "stream": {
+        "usage": "",
+        "alias": "twitch online lastwolfplay",
+        "description": "info sur le stream twitch de Lastwolf"
+    }
 }
