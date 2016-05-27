@@ -65,6 +65,7 @@ try {
 
 mybot.on('ready', function () {
     console.log("Bot is ready.");
+    //bot_hello();
 });
 
 mybot.on("disconnected", function () {
@@ -251,4 +252,8 @@ function bot_error(error){
     // handle error
     console.log('ERROR');
     console.log(error);
+}
+
+function bot_hello(){
+    mybot.sendMessage("Bonjour à tous, je suis en ligne et disponible pour vous aider :wink:");
 }
