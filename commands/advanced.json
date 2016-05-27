@@ -24,5 +24,15 @@
 		"usage": "",
 		"alias": "twitch online lastwolfplay",
         "description": "info sur le stream twitch de Lastwolf"
-    }
+    },
+	"lastwolftweet" {
+		"usage": "",
+		"alias": "twitter lasttweet lastwolfplays",
+		"description": "dernier tweet de Lastwolf"
+	},
+	"thedivtweet": {
+		"usage": "",
+		"alias": "twitter lasttweet thedivisiongame",
+		"description": "dernier tweet de TheDivisionGame"
+	}
 }
