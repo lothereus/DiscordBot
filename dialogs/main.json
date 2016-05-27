@@ -1,55 +1,55 @@
 {
-	"yop tout le monde": {
-		"message": "Yop tout seul :laughing:"
-	},
-	"salut tout le monde": {
-		"message": "Salut tout seul :laughing:"
-	},
-	"bonjour tout le monde": {
-		"message": "Bonjour tout seul :laughing:"
-	},
-	"salut la meute": {
-		"message": "Salut à toi frère loup :wolf:"
-	},
-	"bonjour la meute": {
-		"message": "Bonjour à toi frère loup :wolf:"
-	},
-	"bonne journée": {
-		"message": "Bonne journée, à plus tard"
-	},
-	"bonne soirée": {
-		"message": "Bonne soirée, à demain :wink:"
-	},
-	"bonne nuit": {
-		"message": "Bonne nuit, fais de beaux rêves :zzz:"
-	},
-	"yop": {
-		"message": "Yop, crache pas dedans :yum:"
-	},
-	"plop les gens": {
-		"message": "Plop :interrobang:"
-	},
-	"plop": {
-		"message": "Plop :interrobang:"
-	},
-	"bonjour": {
-		"message": "Bonjour et bienvenu :smiley:"
-	},
-	"hi": {
-		"message": "Hi, welcome"
-	},
-	"salut": {
-		"message": "Salut"
-	},
-	"la grande question sur la vie, l'univers et le reste": {
-		"message": "42"
-	},
-	"salut tous le monde":{
-		"message": "salut à toi, mais tu peux mettre un t à tout le monde :smiley:"
-	},
-	"sa va":{
-		"message": "oui et toi mais sinon Ça va c'est mieux :smiley:"
-	},
+    "yop tout le monde": {
+        "message": "Yop tout seul :laughing:"
+    },
+    "salut tout le monde": {
+        "message": "Salut tout seul :laughing:"
+    },
+    "bonjour tout le monde": {
+        "message": "Bonjour tout seul :laughing:"
+    },
+    "salut la meute": {
+        "message": "Salut à toi frère loup :wolf:"
+    },
+    "bonjour la meute": {
+        "message": "Bonjour à toi frère loup :wolf:"
+    },
+    "bonne journée": {
+        "message": "Bonne journée, à plus tard"
+    },
+    "bonne soirée": {
+        "message": "Bonne soirée, à demain :wink:"
+    },
+    "bonne nuit": {
+        "message": "Bonne nuit, fais de beaux rêves :zzz:"
+    },
+    "yop": {
+        "message": "Yop, crache pas dedans :yum:"
+    },
+    "plop les gens": {
+        "message": "Plop :interrobang:"
+    },
+    "plop": {
+        "message": "Plop :interrobang:"
+    },
+    "bonjour": {
+        "message": "Bonjour et bienvenu :smiley:"
+    },
+    "hi": {
+        "message": "Hi, welcome"
+    },
+    "salut": {
+        "message": "Salut"
+    },
+    "la grande question sur la vie, l'univers et le reste": {
+        "message": "42"
+    },
+    "salut tous le monde": {
+        "message": "salut à toi, mais tu peux mettre un t à tout le monde :smiley:"
+    },
+    "sa va": {
+        "message": "oui et toi mais sinon Ça va c'est mieux :smiley:"
+    },
     "coucou": {
         "message": "coucou tu veux voir ma ****"
     }

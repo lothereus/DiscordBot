@@ -37,7 +37,6 @@
     },
     "server": {
         "description": "liste tout les serveurs de jeu de la communauté de lastwolf",
-	    "message": "Minecraft : Tasaka.ovh:25565#NL#Rust : Tasaka Rust Server#NL#Terraria : En cours"
-    }  
-  
+        "message": "Minecraft : Tasaka.ovh:25565#NL#Rust : Tasaka Rust Server#NL#Terraria : En cours"
+    }
 }

@@ -4,53 +4,52 @@
         "file": "hardware.jpg"
     },
     "twitter": {
-		"usage": "<command> <username>",
+	"usage": "<command> <username>",
         "description": "récupère un tweet ou des données de <username> en fonction de <command>"
     },
-	"twitch": {
-		"usage": "<command> <channelname>",
-		"description": "récupère des détails de diffusion/chaîne de <username> en fonction de <command>"
-	},
-	"diablo": {
-		"usage": "<command> <params>",
-		"description": "récupère des informations sur un joueur, un perso ou le classement"
-	},
-	"planning": {
-		"usage": "",
-		"alias": "twitch planning lastwolfplay",
-		"description": "récupère le planning de Lastwolf"
-	},
-	"stream": {
-		"usage": "",
-		"alias": "twitch online lastwolfplay",
+    "twitch": {
+        "usage": "<command> <channelname>",
+        "description": "récupère des détails de diffusion/chaîne de <username> en fonction de <command>"
+    },
+    "diablo": {
+        "usage": "<command> <params>",
+        "description": "récupère des informations sur un joueur, un perso ou le classement"
+    },
+    "planning": {
+        "usage": "",
+        "alias": "twitch planning lastwolfplay",
+        "description": "récupère le planning de Lastwolf"
+    },
+    "stream": {
+        "usage": "",
+        "alias": "twitch online lastwolfplay",
         "description": "info sur le stream twitch de Lastwolf"
     },
-	"wolftweet": {
-		"usage": "",
-		"alias": "twitter lasttweet lastwolfplays",
+    "wolftweet": {
+        "usage": "",
+        "alias": "twitter lasttweet lastwolfplays",
         "description": "lasttweet de Lastwolf"
     },
-	"divitweet": {
-		"usage": "",
-		"alias": "twitter lasttweet thedivisiongame",
+    "divitweet": {
+        "usage": "",
+        "alias": "twitter lasttweet thedivisiongame",
         "description": "lasttweet de thedivision"
     },
-	"tasatweet": {
-		"usage": "",
-		"alias": "twitter lasttweet tasakasama",
+    "tasatweet": {
+        "usage": "",
+        "alias": "twitter lasttweet tasakasama",
         "description": "lasttweet de tasakasama"
     },
-	"kittytweet": {
-		"usage": "",
-		"listed": false,
-		"alias": "twitter lasttweet hellokitty",
+    "kittytweet": {
+        "usage": "",
+        "listed": false,
+        "alias": "twitter lasttweet hellokitty",
         "description": "lasttweet de hellokitty"
     },
-	"pokemon": {
-		"usage": "",
-		"listed": false,
-		"alias": "twitter lasttweet Pokemon",
+    "pokemon": {
+        "usage": "",
+        "listed": false,
+        "alias": "twitter lasttweet Pokemon",
         "description": "lasttweet de Pokemon"
     }
 }
-
