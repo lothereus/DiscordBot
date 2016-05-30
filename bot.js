@@ -2,7 +2,7 @@ console.log('Bot init');
 // Get all required npm modules
 var package_info = require("./package.json");
 for(var dependency in package_info.dependencies) {
-    var name = dependency.replace('.js','');
+    var name = dependency.replace('.js','').replace('-','');
     console.log("Loading "+dependency);
     try {
         eval("var "+name+" = require(\""+dependency+"\")");

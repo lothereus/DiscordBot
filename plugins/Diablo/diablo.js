@@ -1,6 +1,6 @@
 var package_info = require("./package.json");
 for(var dependency in package_info.dependencies) {
-	var name = dependency.replace('.js','');
+	var name = dependency.replace('.js','').replace('-','');
 	console.log("Loading "+dependency);
 	try {
 		eval("var "+name+" = require(\""+dependency+"\")");
@@ -47,7 +47,42 @@ exports.help = function help(options) {
 // Only one function to get all data
 exports.get = function get(options) {
 	var command_api = api[options.command];
-	var url = command_api.url;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*var url = command_api.url;
 	url = url + "?locale="+package_info.config.locale;
 	
 	// set url
@@ -75,7 +110,7 @@ exports.get = function get(options) {
 						+"- Parangon (era|hc|s|shc): "+result.paragonLevel+"|"+result.paragonLevelHardcore+"|"+result.paragonLevelSeason+"|"+result.paragonLevelSeasonHardcore+"\n"
 						+"- Guilde: "+result.guildName+"\n"
 						+"- Kills (m|e|hc): "+result.kills.monsters+"|"+result.kills.elites+"|"+result.kills.hardcoreMonsters+"\n";
-		options.bot.sendMessage(options.message.channel, message);
+		options.bot.sendMessage(options.message.channel, message);*/
 		/*if(options.command == "online") {
 			if(result.stream) {
 				//console.log(options.param+" is streaming!");

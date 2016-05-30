@@ -3,6 +3,6 @@
 		"locale": "fr_FR"
 	},
 	"dependencies": {
-		"request": ">=2.72.0"
+		"battlenet-api": ">=0.11.0"
 	}
 }
