@@ -42,5 +42,9 @@
     "github": {
         "listed": false,
         "message": "Je viens d'être mis à jour: https://github.com/TasakaSan/DiscordBot"
-    }
+    },
+	"tasaperle": {
+		"listed": false,
+		"message": "\"nous vous pouvez dire ce que vous vous voulez ou vous voulez\". Tasaka, mai 2016."
+	}
 }

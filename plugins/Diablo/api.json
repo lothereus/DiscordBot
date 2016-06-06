@@ -1,29 +1,29 @@
 {
-	"leader": {
-		"auth": "access_token",
-		"url": "https://eu.api.battle.net/data/d3/season/#season#/leaderboard/#type#",
-		"fields": [
+    "leader": {
+        "auth": "access_token",
+        "url": "https://eu.api.battle.net/data/d3/season/#season#/leaderboard/#type#",
+        "fields": [
 			
-		],
-		"message": "OK",
-		"error": "ERROR"
-	},
-	"profile": {
-		"auth": "apikey",
-		"url": "https://eu.api.battle.net/d3/profile/#battletag#/",
-		"fields": [
-			
-		],
-		"message": "OK",
-		"error": "ERROR"
-	},
-	"hero": {
-		"auth": "apikey",
-		"url": "https://eu.api.battle.net/d3/profile/#battletag#/hero/#idhero#",
-		"fields": [
-			
-		],
-		"message": "OK",
-		"error": "ERROR"
-	}
+        ],
+        "message": "OK",
+        "error": "ERROR"
+    },
+    "profile": {
+        "auth": "apikey",
+        "url": "https://eu.api.battle.net/d3/profile/#battletag#/",
+        "fields": [
+
+        ],
+        "message": "OK",
+        "error": "ERROR"
+    },
+    "hero": {
+        "auth": "apikey",
+        "url": "https://eu.api.battle.net/d3/profile/#battletag#/hero/#idhero#",
+        "fields": [
+
+        ],
+        "message": "OK",
+        "error": "ERROR"
+    }
 }

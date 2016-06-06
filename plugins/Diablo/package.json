@@ -1,8 +1,8 @@
 {
-	"config": {
-		"locale": "fr_FR"
-	},
-	"dependencies": {
-		"battlenet-api": ">=0.11.0"
-	}
+    "config": {
+        "locale": "fr_FR"
+    },
+    "dependencies": {
+        "battlenet-api": ">=0.11.0"
+    }
 }
