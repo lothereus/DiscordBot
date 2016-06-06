@@ -8,11 +8,29 @@
     "bonjour tout le monde": {
         "message": "Bonjour tout seul :laughing:"
     },
+    "coucou tout le monde": {
+        "message": "Coucou tout seul :laughing:"
+    },
+    "yo tout le monde": {
+        "message": "Wesh tout seul :hand_splayed: "
+    },
     "salut la meute": {
         "message": "Salut à toi frère loup :wolf:"
     },
     "bonjour la meute": {
         "message": "Bonjour à toi frère loup :wolf:"
+    },
+    "coucou la meute": {
+        "message": "Coucou :wolf:"
+    },
+    "yo la meute": {
+        "message": "Yo fréro :wolf:"
+    },
+    "yop la meute": {
+        "message": "Yop, crache pas dedans :yum:"
+    },
+    "yop": {
+        "message": "Yop, crache pas dedans :yum:"
     },
     "bonne journée": {
         "message": "Bonne journée, à plus tard"
@@ -22,9 +40,6 @@
     },
     "bonne nuit": {
         "message": "Bonne nuit, fais de beaux rêves :zzz:"
-    },
-    "yop": {
-        "message": "Yop, crache pas dedans :yum:"
     },
     "plop les gens": {
         "message": "Plop :interrobang:"
@@ -45,12 +60,9 @@
         "message": "42"
     },
     "salut tous le monde": {
-        "message": "salut à toi, mais tu peux mettre un t à tout le monde :smiley:"
+        "message": "salut à toi, mais tu peux mettre un t à tout le monde :stuck_out_tongue_winking_eye: "
     },
     "sa va": {
-        "message": "oui et toi mais sinon Ça va c'est mieux :smiley:"
-    },
-    "coucou": {
-        "message": "coucou tu veux voir ma ****"
+        "message": "Ça va c'est mieux :smiley:"
     }
 }

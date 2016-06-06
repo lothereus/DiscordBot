@@ -31,20 +31,20 @@
         "description": "le stream twitch de Lastwolf sur NvidiaFrance",
         "message": "Lastwolf lance son stream sur NvidiaFrance: https://www.twitch.tv/nvidiafrance"
     },
-    "donnation": {
+    "donation": {
         "description": "le lien pour faire une donnation à Lastwolf",
-        "message": "Si toi aussi tu veux soutenir le stream de Lastwolf: https://www.twitchalerts.com/donate/lastwolfplay#NL#Les donnations ne sont pas obligatoires mais elles participent à l'amélioration du stream."
+        "message": "Si toi aussi tu veux soutenir le stream de Lastwolf: https://www.twitchalerts.com/donate/lastwolfplay#NL#Les donations ne sont pas obligatoires mais elles participent à l'amélioration du stream."
     },
     "server": {
         "description": "liste tout les serveurs de jeu de la communauté de lastwolf",
-        "message": "Minecraft : Tasaka.ovh:25565#NL#Rust : Tasaka Rust Server#NL#Terraria : En cours"
+        "message": "Minecraft : Tasaka.ovh:25565\nRust : Tasaka Rust Server\nDon't Starve Together : Dans les options de serveur Steam il suffit de cliquer sur ajouter un serveur et rechercher Tasaka.ovh\nTerraria : En cours"
     },
     "github": {
         "listed": false,
-        "message": "Je viens d'être mis à jour: https://github.com/TasakaSan/DiscordBot"
+        "message": "Je viens d'être mis à jour: https://github.com/Lothereus/DiscordBot"
     },
-	"tasaperle": {
-		"listed": false,
-		"message": "\"nous vous pouvez dire ce que vous vous voulez ou vous voulez\". Tasaka, mai 2016."
-	}
+    "tasaperle": {
+        "listed": false,
+        "message": "\"nous vous pouvez dire ce que vous vous voulez ou vous voulez\". Tasaka, mai 2016."
+    }
 }

@@ -3,6 +3,10 @@
         "description": "link la config de Lastwolf",
         "file": "hardware.jpg"
     },
+    "vote": {
+        "usage": "<type> <vote>",
+        "description": "voter pour l'un des sondages en cours"
+    },
     "twitter": {
 	"usage": "<command> <username>",
         "description": "récupère un tweet ou des données de <username> en fonction de <command>"
