@@ -4,8 +4,8 @@
         "file": "hardware.jpg"
     },
     "vote": {
-        "usage": "<type> <vote>",
-        "description": "voter pour l'un des sondages en cours"
+        "usage": "<sondage> (<vote>)",
+        "description": "connaître la liste des choix d'un sondage ou voter pour l'un des sondages en cours"
     },
     "twitter": {
 	"usage": "<command> <username>",

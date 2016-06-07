@@ -1,31 +1,31 @@
 {
-	"lasttweet": {
-		"type": "tweet",
-		"endpoint": "statuses/user_timeline",
-		"params": [
-			{
-				"name": "exclude_replies",
-				"value": true
-			},
-			{
-				"name": "count",
-				"value": 3
-			}
-		],
-		"message": " vient de tweet: ",
-		"error": "nom d'utilisateur incorrecte"
-	},
-	"stats": {
-		"type": "user",
-		"endpoint": "users/show",
-		"fields": [
-			"name",
-			"screen_name",
-			"description",
-			"followers_count"
-		],
-		"message": "Détails pour @#screen_name#:#NL#- Nom: #name##NL#",
-		"additional": "- Followers: #followers_count##NL#- Description: #description#",
-		"error": "nom d'utilisateur incorrecte"
-	}
+    "lasttweet": {
+        "type": "tweet",
+        "endpoint": "statuses/user_timeline",
+        "params": [
+            {
+                "name": "exclude_replies",
+                "value": true
+            },
+            {
+                "name": "count",
+                "value": 3
+            }
+        ],
+        "message": " vient de tweet: ",
+        "error": "nom d'utilisateur incorrecte"
+    },
+    "stats": {
+        "type": "user",
+        "endpoint": "users/show",
+        "fields": [
+            "name",
+            "screen_name",
+            "description",
+            "followers_count"
+        ],
+        "message": "Détails pour @#screen_name#:#NL#- Nom: #name##NL#",
+        "additional": "- Followers: #followers_count##NL#- Description: #description#",
+        "error": "nom d'utilisateur incorrecte"
+    }
 }

@@ -65,7 +65,7 @@ try {
 
 mybot.on('ready', function () {
     console.log("Bot is ready.");
-    //bot_hello();
+    bot_hello();
 });
 
 mybot.on("disconnected", function () {
@@ -104,31 +104,39 @@ mybot.on("message", function(message) {
 
     var input = message.content.trim();
 
+    //COMMAND
     if(input[0] === '!') {
         // message is a command
-        console.log("raw command: "+input);
+        // console.log("raw command: "+input);
 
         var user_cmd = {};
         user_cmd.name = input.split(" ")[0].substring(1);
         user_cmd.content = input.substring(user_cmd.name.length+2);
-
         user_cmd.name = user_cmd.name.toLowerCase();
 
         console.log("command "+user_cmd.name+" from "+message.author);
 
         var command = basics[user_cmd.name];
+
+        // IS BASIC ?
         if(!command) {
             //console.log("command "+user_cmd.name+" not defined in basics!");
             command = advanced[user_cmd.name];
         }
+        // IS ADVANCED ?
         if(!command) {
             //console.log("command "+user_cmd.name+" not defined!");
             command = humor[user_cmd.name];
         }
+        // IS HUMOR ?
         if(!command) {
             console.log("command "+user_cmd.name+" not defined!");
-        } else if (user_cmd.name == "command" || user_cmd.name == "advanced") {
-            // specific help command
+            return;
+        }
+
+        // COMMAND EXISTS
+        if (user_cmd.name == "command" || user_cmd.name == "advanced") {
+            // HELP
             var info = command.message;
             if (user_cmd.name == "advanced") {
                     var cmd_list = advanced;
@@ -153,6 +161,7 @@ mybot.on("message", function(message) {
             mybot.sendMessage(message.channel, info);
         } else {
             var alias = false;
+            // IS ALIAS
             if (command.alias) {
                 alias = true;
                 var original = user_cmd.name;
@@ -160,20 +169,22 @@ mybot.on("message", function(message) {
                 user_cmd.content = command.alias.substring(user_cmd.name.length+1);
                 console.log("!"+original+" alias transformed into !"+user_cmd.name+" "+user_cmd.content);
             }
-            /*if (command.process) {
-                    eval(command.process);
-            }*/
-            //if (command.file) {}
-            if (plugins[user_cmd.name]) {
+            // IS FILE
+            if (command.file) {
+                mybot.sendFile(message.channel, "assets/"+command.file);
+            } else if (plugins[user_cmd.name]) { // IS PLUGIN
+
                 // retrieve the plugin command and its param
                 var plugin_cmd = user_cmd.content.split(" ")[0];
                 var plugin_param = user_cmd.content.substring(plugin_cmd.length+1).split(" ")[0].toLowerCase();
                 plugin_cmd = plugin_cmd.toLowerCase();
+
                 // set options to pass to plugin
                 var options = {
                     bot: mybot,
                     message: message
                 };
+
                 if (plugin_cmd === "" || plugin_param === "") {
                     plugins[user_cmd.name].help(options);
                 } else {
@@ -185,20 +196,22 @@ mybot.on("message", function(message) {
                     options["param"]    = plugin_param;
                     plugins[user_cmd.name].get(options);
                 }
-            } else if (command.message) {
+
+            } else if (command.message) { // IS BASIC MESSAGE
                 if(command.listed == false) {
                     mybot.deleteMessage(message);
                 }
                 mybot.sendMessage(message.channel, command.message.replace(/#NL#/g,"\n"));
-            } else {
-                    console.log("Empty command "+user_cmd.name+": "+JSON.stringify(command));
+            } else { // EMPTY COMMAND (exists but without any action)
+                console.log("Empty command "+user_cmd.name+": "+JSON.stringify(command));
             }
         }
     } else if(input.indexOf(mybot.user.mention()) == 0) {
 
+        // BOT DIALOGS
         // Bot is mentioned at beginning
         console.log("user "+message.author+" is speaking with Bot");
-        try { 
+        try {
             var user_cmd = {};
             user_cmd.mention = input.split(" ")[0];
             user_cmd.first = input.split(" ")[1];
@@ -207,20 +220,23 @@ mybot.on("message", function(message) {
             console.log("user said '"+user_cmd.content+"'");
             // do something ?
 
-        } catch(e) { //no command 
+        } catch(e) { //no command
             mybot.reply(message, "Oui ?");
         }
 
-    } else if(message.isMentioned(mybot.user)) {
+    } else if(message.isMentioned(mybot.user)
+        || input.toLowerCase().indexOf(mybot.user.username.toLowerCase()) >= 0
+        || input.toLowerCase().indexOf(" bot ") >= 0) {
 
+        // BOT MENTIONED
         // Bot is mentioned elsewhere
         console.log("user "+message.author+" mentioned Bot");
         mybot.sendMessage(message.channel, "On parle de moi ? :smile:");
 
     } else if(input.length >= 2 && input.length <= 72) {
 
-        // Maybe dialog context is possible
-        console.log("user "+message.author+" may dialog with Bot");
+        // BOT REACTS
+        console.log("bot could react to user "+message.author+" message");
         var dialogs = require("./dialogs/main.json");
         for(intro in dialogs) {
             //if(input.toLowerCase().indexOf(intro) >= 0) {
@@ -255,5 +271,5 @@ function bot_error(error){
 }
 
 function bot_hello(){
-    mybot.sendMessage("Bonjour à tous, je suis en ligne et disponible pour vous aider :wink:");
+    mybot.sendMessage(mybot.channels.get("id", /.*/), "Bonjour à tous, je suis en ligne et disponible pour vous aider :wink:");
 }

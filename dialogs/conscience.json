@@ -1,5 +1,8 @@
 {
     "comment vas tu ?": {
         "message": "bien et toi ?"
+    },
+    "t'es nul": {
+        "message": "c'est toi qui le dit... "
     }
 }
