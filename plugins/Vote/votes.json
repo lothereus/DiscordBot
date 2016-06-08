@@ -1,0 +1,21 @@
+{
+    "current": {
+        "mdc": {
+            "name": "Morceau de choix",
+            "list": "games",
+            "echo": 1,
+            "end": "2016-06-13T00:00:00.000Z"
+        },
+        "test": {
+            "name": "Un autre votre",
+            "list": "choix",
+            "end": "2016-06-09T00:00:00.000Z"
+        }
+    },
+    "ended": {
+        "mdc-0": {
+            "winner": "Last au toilette",
+            "votes": 34
+        }
+    }
+}
