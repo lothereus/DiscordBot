@@ -15,15 +15,7 @@
   "maintainers": [
     {
       "name": "Lothereus",
-      "email": ""
-    },
-    {
-      "name": "TasakaSan",
-      "email": ""
-    },
-    {
-      "name": "MrChatouille",
-      "email": ""
+      "email": "lothereus@users.noreply.github.com"
     }
   ],
   "main": "bot.js",

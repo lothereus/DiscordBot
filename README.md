@@ -2,6 +2,8 @@
 
 Un **Bot** pour les serveurs **Discord** basé sur l'API *Discord.js*
 
+(minimal version : https://github.com/lothereus/DiscordBotLite)
+
 ## Installation
 
 Ce Bot nécessite **Node.js** pour fonctionner. Pour l'installer : https://nodejs.org/en/download/
@@ -17,18 +19,7 @@ Ce Bot nécessite **Node.js** pour fonctionner. Pour l'installer : https://nodej
 * Copier le fichier template `config.json.tpl` vers un nouveau fichier `config.json`
 * Copier le fichier template `auth.json.tpl` vers un nouveau fichier `auth.json`
 
-Dans le fichier `config.json` dans le champ _environment_ ne garder que l'option nécessaire selon votre environnement
-
-sous Windows:
-```
-"environment": "windows"
-```
-sous Linux:
-```
-"environment": "linux"
-```
-
-Concernant le champ _self_ dans le fichier `config.json`, il s'agit d'accepter (true) ou non (false) que le **Bot** interprète ses propres messages.
+Dans le fichier `config.json` dans le champ _self_, il s'agit d'accepter (true) ou non (false) que le **Bot** interprète ses propres messages.
 
 Il est conseillé de garder cette option à _false_ afin d'éviter que le **Bot** ne se réponde à lui même, sauf en phase de développement si vous souhaitez tester le **Bot** avec votre propre compte **Discord**.
 
@@ -136,8 +127,8 @@ Ces plugins se trouvent dans le dossier `plugins` ordonnés tous de la manière 
 * [plugins]
   * [Nom_du_plugin]
     * nom_du_plugin.js
-	* package.json
-	* api.json
+    * package.json
+    * api.json
 	
 * le fichier js contiendra le fonctionnement de plugin avec au moins une fonction `help` qui affiche une aide lorsque la commande principale du plugin est utilisée sans argument et une fonction `get` qui répondra à toutes les sous-commandes du plugin.
 * le fichier package.json contient les modules à charger automatiquement pour le plugin
